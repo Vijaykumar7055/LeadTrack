@@ -20,6 +20,7 @@ public class Role {
     private Long id;
 
     @Column(nullable = false, unique = true)
+    @Enumerated(EnumType.STRING)
     private RoleType roleName;
 
     @Column(length = 255)

@@ -1,5 +1,6 @@
 package com.crm.LeadTrack.dto.responses;
 
+import com.crm.LeadTrack.Entity.RoleType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class RoleResponseDto {
     private Long id;
-    private String roleName;
+    private RoleType roleName;
     private String description;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
